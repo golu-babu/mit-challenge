@@ -1,0 +1,20 @@
+#house hunting saving with a raise
+
+annual_salary=float(input("enter annual salary"))
+portion_saved=float(input("enter percent of salary to be saved in decimal"))
+total_cost=float(input("enter the total cost of your house"))
+semi_annual_raise=float(input("percent of semi annual raise in decimal"))
+portion_down_payment=0.25*total_cost
+current_saving=0.0
+goal_time=float(input("months we want to achive"))
+month=0.0
+while(current_saving<portion_down_payment):
+    retrn=current_saving*(0.04/12)
+    current_saving=current_saving+(retrn+((annual_salary/12)*portion_saved))
+    month=month+1
+    if(month%6==0):
+        annual_salary=annual_salary+(annual_salary*semi_annual_raise)
+print("number of months to wait",month)
+
+#house hunting finding right amount of money to save using bisection search
+
