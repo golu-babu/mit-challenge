@@ -2,6 +2,13 @@
 Finishing 4 year mit computer science course in 1 year. Starting 2-dec-2021.
 including all quiz, exams and assigments.
 Computer Science and Engineering (Course 6-3)syllabus:
+GENERAL INSTITUTE REQUIREMENTS::
+5-111-principles-of-chemical-science
+8-01sc-classical-mechanics
+8-02-physics-ii-electricity-and-magnetism
+18-01-single-variable-calculus
+18-02-multivariable-calculus
+7-016-introductory-biology
 6.0001	Introduction to Computer Science Programming in Python
 6.042[J]	Mathematics for Computer Science
 6.02 Introduction to EECS via Communication Networks
