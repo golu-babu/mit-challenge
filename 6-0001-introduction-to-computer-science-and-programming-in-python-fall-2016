@@ -17,4 +17,30 @@ while(current_saving<portion_down_payment):
 print("number of months to wait",month)
 
 #house hunting finding right amount of money to save using bisection search
-
+annual_salary=float(input("enter annual salary"))
+portion_saved=0.1
+total_cost=1000000
+semi_annual_raise=0.07
+portion_down_payment=0.25*total_cost
+current_saving=0.0
+goal_time=36
+high=1.0
+low=0.0
+steps=0
+guess=(high+low)/2
+while(current_saving-portion_down_payment<=100):
+    for month in range(goal_time):
+     retrn=current_saving*(guess/12)
+     current_saving=current_saving+(retrn+((annual_salary/12)*portion_saved))
+     month=month+1
+     if(month%6==0):
+         annual_salary=annual_salary+(annual_salary*semi_annual_raise)
+    if(current_saving>portion_down_payment):
+        low=guess
+    else:
+        high=guess
+    guess=(high+low)/2
+    steps=steps+1
+print(guess)
+print(steps)
+print("number of months to wait",month)
